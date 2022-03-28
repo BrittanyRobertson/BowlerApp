@@ -1,19 +1,23 @@
 ﻿<Properties StartupConfiguration="{5127B240-5ECC-4AD0-9665-EB244F9E67EE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BowlerApp/appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BowlerApp/Models/Bowler.cs">
     <Files>
       <File FileName="BowlerApp/Controllers/HomeController.cs" Line="21" Column="10" />
-      <File FileName="BowlerApp/appsettings.json" Line="1" Column="1" />
+      <File FileName="BowlerApp/appsettings.json" Line="11" Column="118" />
+      <File FileName="BowlerApp/Models/BowlersDbContext.cs" Line="13" Column="43" />
+      <File FileName="BowlerApp/Models/Bowler.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BowlerApp" expanded="True">
             <Node name="BowlerApp" expanded="True">
+              <Node name="Models" expanded="True">
+                <Node name="Bowler.cs" selected="True" />
+              </Node>
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
-              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>
