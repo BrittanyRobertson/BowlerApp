@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "nOPxJmXULNeUYVyDo/LErJcU2pzqKaZ6EYUOPmn2ZhXq6edAiKevsO8e1u7LHQ+8SI+Chpn0DjUsOtSc2eXkTw==",
+  "dgSpecHash": "3S2/ZUpOB5zOhAp8R3+j6Iy5FqjdRE59hJvfgdPTCEVXNjtOZC4l5U9kTuHhRb1HgO8erOVhfU2eEgHk9Ks/UQ==",
   "success": true,
   "projectFilePath": "/Users/brittany/Documents/GitHub/BowlerApp/BowlerApp/BowlerApp.csproj",
   "expectedPackageFiles": [
     "/Users/brittany/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/brittany/.nuget/packages/microsoft.bcl.hashcode/1.1.1/microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
+    "/Users/brittany/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/Users/brittany/.nuget/packages/microsoft.entityframeworkcore/3.1.23/microsoft.entityframeworkcore.3.1.23.nupkg.sha512",
     "/Users/brittany/.nuget/packages/microsoft.entityframeworkcore.abstractions/3.1.23/microsoft.entityframeworkcore.abstractions.3.1.23.nupkg.sha512",
     "/Users/brittany/.nuget/packages/microsoft.entityframeworkcore.analyzers/3.1.23/microsoft.entityframeworkcore.analyzers.3.1.23.nupkg.sha512",
+    "/Users/brittany/.nuget/packages/microsoft.entityframeworkcore.relational/3.1.19/microsoft.entityframeworkcore.relational.3.1.19.nupkg.sha512",
     "/Users/brittany/.nuget/packages/microsoft.extensions.caching.abstractions/3.1.23/microsoft.extensions.caching.abstractions.3.1.23.nupkg.sha512",
     "/Users/brittany/.nuget/packages/microsoft.extensions.caching.memory/3.1.23/microsoft.extensions.caching.memory.3.1.23.nupkg.sha512",
     "/Users/brittany/.nuget/packages/microsoft.extensions.configuration/3.1.23/microsoft.extensions.configuration.3.1.23.nupkg.sha512",
@@ -20,6 +22,10 @@
     "/Users/brittany/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.23/microsoft.extensions.logging.abstractions.3.1.23.nupkg.sha512",
     "/Users/brittany/.nuget/packages/microsoft.extensions.options/3.1.23/microsoft.extensions.options.3.1.23.nupkg.sha512",
     "/Users/brittany/.nuget/packages/microsoft.extensions.primitives/3.1.23/microsoft.extensions.primitives.3.1.23.nupkg.sha512",
+    "/Users/brittany/.nuget/packages/mysqlconnector/0.69.10/mysqlconnector.0.69.10.nupkg.sha512",
+    "/Users/brittany/.nuget/packages/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg.sha512",
+    "/Users/brittany/.nuget/packages/pomelo.entityframeworkcore.mysql/3.2.7/pomelo.entityframeworkcore.mysql.3.2.7.nupkg.sha512",
+    "/Users/brittany/.nuget/packages/pomelo.jsonobject/2.2.1/pomelo.jsonobject.2.2.1.nupkg.sha512",
     "/Users/brittany/.nuget/packages/system.collections.immutable/1.7.1/system.collections.immutable.1.7.1.nupkg.sha512",
     "/Users/brittany/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "/Users/brittany/.nuget/packages/system.diagnostics.diagnosticsource/4.7.1/system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
