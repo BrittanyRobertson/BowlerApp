@@ -17,8 +17,6 @@ namespace BowlerApp.Models
 
         public Bowler GetBowler(int bowlerid)
         {
-            //ViewBag.Teams = _context.Teams.ToList();
-
             var bowler = _context.Bowlers.Single(x => x.BowlerID == bowlerid);
             return bowler;
         }

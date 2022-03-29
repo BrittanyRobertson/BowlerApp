@@ -22,7 +22,6 @@ namespace BowlerApp.Controllers
 
         public IActionResult Index(string team)
         {
-            //var blah = _repo.Bowlers.ToList();
             IQueryable<Bowler> blah = _repo.Bowlers.Where(x => x.Team.TeamName == team || team == null);
 
             return View(blah);
@@ -38,9 +37,54 @@ namespace BowlerApp.Controllers
         [HttpPost]
         public IActionResult BowlerForm(Bowler b)
         {
-            _repo.CreateBowler(b);
+            if (ModelState.IsValid)
+            {
+                _repo.CreateBowler(b);
+
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                ViewBag.Teams = _repo.Teams.ToList();
+                return View(b);
+            }
+        }
+
+        // Edit Bowler
+
+        [HttpGet]
+        public IActionResult EditBowler(int bowlerid)
+        {
+            ViewBag.Teams = _repo.Teams.ToList();
+
+            _repo.GetBowler(bowlerid);
+            return View("BowlerForm");
+        }
+
+        [HttpPost]
+        public IActionResult EditBowler(Bowler b)
+        {
+            _repo.EditBowler(b);
+
+            return RedirectToAction("Index");
+        }
+
+
+        // Delete Bowler
+        [HttpGet]
+        public IActionResult DeleteBowler(int bowlerid)
+        {
+            _repo.GetBowler(bowlerid);
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public IActionResult DeleteTask(Bowler b)
+        {
+            _repo.DeleteBowler(b);
 
             return RedirectToAction("Index");
         }
     }
 }
+
