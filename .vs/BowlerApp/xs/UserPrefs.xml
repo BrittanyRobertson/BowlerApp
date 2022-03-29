@@ -1,23 +1,25 @@
 ﻿<Properties StartupConfiguration="{5127B240-5ECC-4AD0-9665-EB244F9E67EE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BowlerApp/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BowlerApp/Views/Home/Index.cshtml">
     <Files>
-      <File FileName="BowlerApp/Controllers/HomeController.cs" Line="21" Column="10" />
+      <File FileName="BowlerApp/Controllers/HomeController.cs" Line="26" Column="29" />
       <File FileName="BowlerApp/appsettings.json" Line="11" Column="118" />
       <File FileName="BowlerApp/Models/BowlersDbContext.cs" Line="13" Column="28" />
       <File FileName="BowlerApp/Models/Bowler.cs" Line="10" Column="28" />
-      <File FileName="BowlerApp/Startup.cs" Line="28" Column="34" />
+      <File FileName="BowlerApp/Startup.cs" Line="32" Column="87" />
+      <File FileName="BowlerApp/Views/Home/Index.cshtml" Line="6" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BowlerApp" expanded="True">
             <Node name="BowlerApp" expanded="True">
-              <Node name="Models" expanded="True" />
+              <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
                 <Node name="Shared" expanded="True" />
               </Node>
-              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -26,7 +28,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.BowlerApp FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.BowlerApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

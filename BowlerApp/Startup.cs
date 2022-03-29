@@ -29,7 +29,7 @@ namespace BowlerApp
 
             services.AddDbContext<BowlersDbContext> (options =>
             {
-                options.UseMySql(Configuration["ConnectionStrings:BowlersDbContext"]);
+                options.UseMySql(Configuration.GetConnectionString("BowlersDbConnection"));
             });
         }
 
