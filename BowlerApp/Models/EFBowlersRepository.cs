@@ -7,12 +7,21 @@ namespace BowlerApp.Models
     {
         private BowlersDbContext _context { get; set; }
 
-        public EFBowlersRepository(BowlersDbContext temp)
+        public EFBowlersRepository(BowlersDbContext x)
         {
-            _context = temp;
+            _context = x;
         }
 
         public IQueryable<Bowler> Bowlers => _context.Bowlers;
+
+        public Bowler GetBowler(int bowlerid)
+        {
+            //ViewBag.Teams = _context.Teams.ToList();
+
+            var bowler = _context.Bowlers.Single(x => x.BowlerID == bowlerid);
+            //return View("Index", bowler);
+            return bowler;
+        }
 
         public void SaveBowler(Bowler b)
         {
