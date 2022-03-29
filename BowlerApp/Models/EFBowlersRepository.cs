@@ -19,7 +19,6 @@ namespace BowlerApp.Models
             //ViewBag.Teams = _context.Teams.ToList();
 
             var bowler = _context.Bowlers.Single(x => x.BowlerID == bowlerid);
-            //return View("Index", bowler);
             return bowler;
         }
 
@@ -31,6 +30,12 @@ namespace BowlerApp.Models
         public void CreateBowler(Bowler b)
         {
             _context.Add(b);
+            _context.SaveChanges();
+        }
+
+        public void EditBowler(Bowler b)
+        {
+            _context.Update(b);
             _context.SaveChanges();
         }
 
