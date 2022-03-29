@@ -18,7 +18,7 @@ namespace BowlerApp.Models
         [StringLength(1, ErrorMessage = "Max Length for Middle Initial is 1 character")]
         public string BowlerMiddleInit { get; set; }
 
-        [StringLength(50, ErrorMessage = "Max Length for Last Name is 50 characters")]
+        [StringLength(50, ErrorMessage = "Max Length for Address is 50 characters")]
         public string BowlerAddress { get; set; }
 
         [StringLength(50, ErrorMessage = "Max Length for City is 50 characters")]
