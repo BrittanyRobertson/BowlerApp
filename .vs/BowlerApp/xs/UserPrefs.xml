@@ -1,28 +1,35 @@
 ﻿<Properties StartupConfiguration="{5127B240-5ECC-4AD0-9665-EB244F9E67EE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BowlerApp/Models/Team.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BowlerApp/Models/EFBowlersRepository.cs">
     <Files>
-      <File FileName="BowlerApp/Controllers/HomeController.cs" Line="24" Column="29" />
+      <File FileName="BowlerApp/Controllers/HomeController.cs" Line="25" Column="37" />
       <File FileName="BowlerApp/appsettings.json" Line="11" Column="114" />
       <File FileName="BowlerApp/Models/BowlersDbContext.cs" Line="13" Column="28" />
-      <File FileName="BowlerApp/Models/Bowler.cs" Line="10" Column="28" />
-      <File FileName="BowlerApp/Startup.cs" Line="35" Column="75" />
+      <File FileName="BowlerApp/Models/Bowler.cs" Line="22" Column="39" />
+      <File FileName="BowlerApp/Views/Shared/BowlerSummary.cshtml" Line="18" Column="1" />
       <File FileName="BowlerApp/Views/Home/Index.cshtml" Line="13" Column="1" />
-      <File FileName="BowlerApp/Models/IBowlersRepository.cs" Line="8" Column="42" />
-      <File FileName="BowlerApp/Models/EFBowlersRepository.cs" Line="15" Column="62" />
-      <File FileName="BowlerApp/Models/Team.cs" Line="6" Column="22" />
+      <File FileName="BowlerApp/Views/Shared/_Layout.cshtml" Line="30" Column="19" />
+      <File FileName="BowlerApp/Views/Shared/Teams/Default.cshtml" Line="13" Column="4" />
+      <File FileName="BowlerApp/Components/TeamsViewComponent.cs" Line="22" Column="28" />
+      <File FileName="BowlerApp/Models/IBowlersRepository.cs" Line="12" Column="33" />
+      <File FileName="BowlerApp/Models/EFBowlersRepository.cs" Line="32" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BowlerApp" expanded="True">
             <Node name="BowlerApp" expanded="True">
+              <Node name="Components" expanded="True" />
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True">
-                <Node name="Team.cs" selected="True" />
+                <Node name="EFBowlersRepository.cs" selected="True" />
               </Node>
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="Components" expanded="True">
+                    <Node name="Teams" expanded="True" />
+                  </Node>
+                </Node>
               </Node>
             </Node>
           </Node>

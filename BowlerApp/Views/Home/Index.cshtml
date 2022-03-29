@@ -4,12 +4,9 @@
 
 @model List<Bowler>
 
-<h1>Bowlers</h1>
+<h1>The Bowling League</h1>
 
-<ul>
-    @foreach (var b in Model)
-    {
-        <li>@b.BowlerID - @b.BowlerFirstName @b.BowlerLastName</li>
-
-    }
-</ul>
+@foreach (Bowler b in Model)
+{
+    <partial name="BowlerSummary" model="b" />
+}

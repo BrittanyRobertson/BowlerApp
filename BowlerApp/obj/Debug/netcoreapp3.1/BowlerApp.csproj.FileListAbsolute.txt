@@ -54,3 +54,5 @@
 /Users/brittany/Documents/GitHub/BowlerApp/BowlerApp/obj/Debug/netcoreapp3.1/BowlerApp.dll
 /Users/brittany/Documents/GitHub/BowlerApp/BowlerApp/obj/Debug/netcoreapp3.1/BowlerApp.pdb
 /Users/brittany/Documents/GitHub/BowlerApp/BowlerApp/obj/Debug/netcoreapp3.1/BowlerApp.genruntimeconfig.cache
+/Users/brittany/Documents/GitHub/BowlerApp/BowlerApp/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/Teams/Default.cshtml.g.cs
+/Users/brittany/Documents/GitHub/BowlerApp/BowlerApp/obj/Debug/netcoreapp3.1/Razor/Views/Shared/BowlerSummary.cshtml.g.cs

@@ -1,0 +1,22 @@
+﻿@{
+}
+
+@model Bowler
+
+<div class="card card-outline-primary m-1 p-1">
+    <div class="bg-light p-1">
+        <h3>@Model.BowlerFirstName @Model.BowlerMiddleInit @Model.BowlerLastName  </h3>
+
+        <span class="badge bg-info" style="float:right">
+            Phone Number: @Model.BowlerPhoneNumber
+        </span>
+    </div>
+    <p><b>Address:</b></p>
+    <p>@Model.BowlerAddress</p>
+    <p>@Model.BowlerCity, @Model.BowlerState</p>
+    <p>@Model.BowlerZip</p>
+    <span>
+        <button class="btn btn-sm btn-info" style="">Edit</button>
+        <button class="btn btn-sm btn-danger">Delete</button>
+    </span>
+</div>
