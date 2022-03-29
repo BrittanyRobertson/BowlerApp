@@ -11,17 +11,17 @@ namespace BowlerApp.Controllers
 {
     public class HomeController : Controller
     {
-        private BowlersDbContext _context { get; set; }
+        private IBowlersRepository _repo { get; set; }
 
         // constructor
-        public HomeController(BowlersDbContext temp)
+        public HomeController(IBowlersRepository temp)
         {
-            _context = temp;
+            _repo = temp;
         }
 
         public IActionResult Index()
         {
-            var blah = _context.Bowlers.ToList();
+            var blah = _repo.Bowlers.ToList();
 
             return View(blah);
         }
