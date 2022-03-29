@@ -13,6 +13,7 @@ namespace BowlerApp.Models
         }
 
         public IQueryable<Bowler> Bowlers => _context.Bowlers;
+        public IQueryable<Team> Teams => _context.Teams;
 
         public Bowler GetBowler(int bowlerid)
         {

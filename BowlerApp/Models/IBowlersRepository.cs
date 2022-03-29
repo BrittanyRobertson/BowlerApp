@@ -6,6 +6,7 @@ namespace BowlerApp.Models
     public interface IBowlersRepository
     {
         IQueryable<Bowler> Bowlers { get; }
+        IQueryable<Team> Teams { get; }
 
         public Bowler GetBowler(int bowlerid);
 

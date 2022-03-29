@@ -20,11 +20,27 @@ namespace BowlerApp.Controllers
             _repo = temp;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string team)
         {
-            var blah = _repo.Bowlers.ToList();
+            //var blah = _repo.Bowlers.ToList();
+            IQueryable<Bowler> blah = _repo.Bowlers.Where(x => x.Team.TeamName == team || team == null);
 
             return View(blah);
+        }
+
+        [HttpGet]
+        public IActionResult BowlerForm()
+        {
+            ViewBag.Teams = _repo.Teams.ToList();
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult BowlerForm(Bowler b)
+        {
+            _repo.CreateBowler(b);
+
+            return RedirectToAction("Index");
         }
     }
 }

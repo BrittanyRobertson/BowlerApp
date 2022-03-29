@@ -15,7 +15,7 @@ namespace BowlerApp.Components
         }
         public IViewComponentResult Invoke()
         {
-            ViewBag.SelectedTeam = RouteData?.Values["TeamName"];
+            ViewBag.SelectedTeam = RouteData?.Values["team"];
 
             var teams = repo.Bowlers
                 .Select(x => x.Team.TeamName)
