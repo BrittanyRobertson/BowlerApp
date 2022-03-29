@@ -31,7 +31,8 @@ namespace BowlerApp.Controllers
         public IActionResult BowlerForm()
         {
             ViewBag.Teams = _repo.Teams.ToList();
-            return View();
+            // have to pass in a new bowler so the object that is passed into the form has an id 
+            return View(new Bowler());
         }
 
         [HttpPost]
@@ -57,8 +58,8 @@ namespace BowlerApp.Controllers
         {
             ViewBag.Teams = _repo.Teams.ToList();
 
-            _repo.GetBowler(bowlerid);
-            return View("BowlerForm");
+            Bowler b = _repo.GetBowler(bowlerid);
+            return View("BowlerForm", b);
         }
 
         [HttpPost]
@@ -74,15 +75,8 @@ namespace BowlerApp.Controllers
         [HttpGet]
         public IActionResult DeleteBowler(int bowlerid)
         {
-            _repo.GetBowler(bowlerid);
-            return RedirectToAction("Index");
-        }
-
-        [HttpPost]
-        public IActionResult DeleteTask(Bowler b)
-        {
+            Bowler b = _repo.GetBowler(bowlerid);
             _repo.DeleteBowler(b);
-
             return RedirectToAction("Index");
         }
     }

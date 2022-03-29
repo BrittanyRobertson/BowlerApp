@@ -16,7 +16,7 @@
     <p>@Model.BowlerCity, @Model.BowlerState</p>
     <p>@Model.BowlerZip</p>
     <span>
-        <button class="btn btn-sm btn-info" asp-action="EditBowler" asp-route-bowlerid="@Model.BowlerID">Edit</button>
-        <button class="btn btn-sm btn-danger" asp-action="DeleteBowler" asp-route-bowlerid="@Model.BowlerID">Delete</button>
+        <a class="btn btn-sm btn-info" asp-controller="Home" asp-action="EditBowler" asp-route-bowlerid="@Model.BowlerID">Edit</a>
+        <a class="btn btn-sm btn-danger" asp-controller="Home" asp-action="DeleteBowler" asp-route-bowlerid="@Model.BowlerID">Delete</a>
     </span>
 </div>
