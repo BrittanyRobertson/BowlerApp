@@ -24,6 +24,10 @@ namespace BowlerApp.Controllers
         {
             IQueryable<Bowler> blah = _repo.Bowlers.Where(x => x.Team.TeamName == team || team == null);
 
+            //ViewBag.header = _repo.Teams
+            //    .Where(x => x.TeamName == team)
+            //    .ToList();
+
             return View(blah);
         }
 
